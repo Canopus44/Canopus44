@@ -10,9 +10,9 @@
 
 <br />
 
-> **Menos herramientas. Más negocio.**
->
-> Soy **Santiago**, fundador de **[Cinnamon](https://cinnamon-hub.com)**. Un solo lugar para atender a tus clientes y mover el negocio: sin cinco apps abiertas y sin datos copiados de un lado a otro.
+## Menos herramientas. Más negocio.
+
+Soy **Santiago**, fundador de **[Cinnamon](https://cinnamon-hub.com)**: un solo lugar para atender a tus clientes y mover el negocio, sin cinco apps abiertas y sin datos copiados de un lado a otro.
 
 ### Lo que cambia
 
