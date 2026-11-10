@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="https://cinnamon-hub.com"><img src="https://img.shields.io/badge/cinnamon--hub.com-E08A4B?style=for-the-badge&logo=astro&logoColor=white" alt="cinnamon-hub.com" /></a>
-  <a href="https://x.com/Canopus44_"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X / Twitter" /></a>
+  <a href="https://x.com/Canopus44_"><img src="https://img.shields.io/badge/@Canopus44__-000000?style=for-the-badge&logo=x&logoColor=white" alt="X / Twitter" /></a>
   <a href="https://github.com/Canopus44?tab=repositories"><img src="https://img.shields.io/badge/repositorios-181717?style=for-the-badge&logo=github&logoColor=white" alt="Repositorios" /></a>
 </div>
 
@@ -28,16 +28,15 @@
 ### 🍂 Cinnamon
 
 ```text
-   WhatsApp · Instagram · TikTok · Meta · Widget
-                        │
-                        ▼
-              chat-backend  (NestJS · Postgres + Mongo)
-                        │  JWT compartido · sin acceso cruzado a BD
-                        ▼
-               erp-backend  (NestJS · Postgres)
-                        │
-                        ▼
-   CloudFront + S3  ·  ECR  ·  Terraform  ·  CloudWatch
+┌───────────────────────────────────────────────────────────┐
+│ CANALES    WhatsApp · Instagram · TikTok · Meta · Widget  │
+├───────────────────────────────────────────────────────────┤
+│ CHAT       chat-backend · NestJS · Postgres + Mongo       │
+│            JWT compartido · sin acceso cruzado a BD       │
+│ ERP        erp-backend · NestJS · Postgres                │
+├───────────────────────────────────────────────────────────┤
+│ INFRA      CloudFront · S3 · ECR · Terraform · CloudWatch │
+└───────────────────────────────────────────────────────────┘
 ```
 
 | Producto | Qué resuelve | Stack |
