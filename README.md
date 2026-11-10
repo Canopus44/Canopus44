@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/hero.svg" width="100%" alt="Santiago Molina — CEO & Founder de Cinnamon" />
+  <img src="assets/hero.svg" width="100%" alt="Santiago Molina — CEO &amp; Founder de Cinnamon" />
 </div>
 
 <div align="center">
@@ -21,7 +21,7 @@
 ### 🧭 Qué hago
 
 - **Producto** — Defino qué se construye y por qué. Dos productos independientes (Chat y ERP) que comparten autenticación y no comparten base de datos: cada uno con su dueño, su contrato y su ritmo de despliegue.
-- **Arquitectura** — Monorepo imposible, así que siete repos con reglas claras: JWT con `sub`, `email`, `role` y `companyId`; integración **solo por HTTP REST**; cero acceso cruzado a bases de datos.
+- **Arquitectura** — Nada de monorepo: siete repos con reglas claras. JWT con `sub`, `email`, `role` y `companyId`; integración **solo por HTTP REST**; cero acceso cruzado a bases de datos.
 - **Código** — Backends NestJS, frontends Angular, librería de componentes propia, shell de escritorio en Electron y una consola en Rust cuando Docker necesita una cara.
 - **Infraestructura** — Terraform, ECR, S3, CloudFront, CloudWatch y systemd. Si no está en código, no existe.
 
@@ -89,7 +89,7 @@
 - **Un PR por repo.** Un cambio que cruza aplicaciones son varios PRs enlazados, nunca un commit gigante que nadie puede revisar.
 - **El contrato primero.** El OpenAPI se genera desde el código y jamás se edita a mano: si el contrato miente, el cliente se rompe en producción.
 - **La migración se escribe una vez.** Nada de `synchronize: true` ni "arreglemos la base en caliente".
-- **Sin respuesta lenta.** Los servicios tienen *health check*, *start period* y límites de memoria antes de ver un solo usuario real.
+- **Los servicios se vigilan solos.** *Health checks*, *start period* y límites de memoria antes de ver un solo usuario real.
 - **Documentar es parte de construir.** Bitácoras, informes técnicos y `AGENTS.md` en cada repo: el contexto no puede vivir solo en la cabeza del fundador.
 
 ### 📡 En este momento
@@ -102,7 +102,7 @@
 ---
 
 <div align="center">
-  <sub><b>Medellín, Colombia</b> · UTC−5 · construyendo en público, desplegando sin drama</sub>
+  <sub><b>Medellín, Colombia</b> · UTC−5 · construyendo y desplegando sin drama</sub>
 </div>
 
 ---
