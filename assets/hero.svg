@@ -53,13 +53,10 @@
     <text x="222" y="198" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="400" fill="#C7D3E4">— Cinnamon</text>
 
     <!-- tagline -->
-    <text x="64" y="236" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16.5" fill="#9BB0CB">La conversación y la operación del negocio, en un solo lugar.</text>
+    <text x="64" y="242" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="19" fill="#C3D0E2">Todo tu negocio, en una sola conversación.</text>
 
     <!-- rule -->
-    <rect x="64" y="262" width="72" height="3" rx="1.5" fill="url(#sweep)"/>
-
-    <!-- meta -->
-    <text x="64" y="292" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" letter-spacing="1.4" fill="#6F819C">CHAT + ERP · MULTIEMPRESA · EN LA NUBE</text>
+    <rect x="64" y="276" width="72" height="3" rx="1.5" fill="url(#sweep)"/>
 
     <!-- orbit -->
     <g transform="translate(980 160)">
