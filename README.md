@@ -28,15 +28,11 @@
 ### 🍂 Cinnamon
 
 ```text
-┌───────────────────────────────────────────────────────────┐
-│ CANALES    WhatsApp · Instagram · TikTok · Meta · Widget  │
-├───────────────────────────────────────────────────────────┤
-│ CHAT       chat-backend · NestJS · Postgres + Mongo       │
-│            JWT compartido · sin acceso cruzado a BD       │
-│ ERP        erp-backend · NestJS · Postgres                │
-├───────────────────────────────────────────────────────────┤
-│ INFRA      CloudFront · S3 · ECR · Terraform · CloudWatch │
-└───────────────────────────────────────────────────────────┘
+┌ CANALES  WhatsApp · Instagram · TikTok · Meta · Widget
+├ CHAT     chat-backend · NestJS · Postgres + Mongo
+│          JWT compartido · sin acceso cruzado a BD
+├ ERP      erp-backend · NestJS · Postgres
+└ INFRA    CloudFront · S3 · ECR · Terraform · CloudWatch
 ```
 
 | Producto | Qué resuelve | Stack |
