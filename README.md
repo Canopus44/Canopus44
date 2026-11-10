@@ -1,5 +1,8 @@
 <div align="center">
-  <img src="assets/hero.svg" width="100%" alt="Santiago Molina — CEO &amp; Founder de Cinnamon" />
+  <picture>
+    <source media="(max-width: 700px)" srcset="assets/hero-mobile.svg">
+    <img src="assets/hero.svg" width="100%" alt="Santiago Molina — CEO &amp; Founder de Cinnamon" />
+  </picture>
 </div>
 
 <div align="center">
