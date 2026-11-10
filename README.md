@@ -35,12 +35,10 @@
 └ INFRA    CloudFront · S3 · ECR · Terraform · CloudWatch
 ```
 
-| Producto | Qué resuelve | Stack |
-| :--- | :--- | :--- |
-| **Chat** | Operación de conversaciones en tiempo real, multicanal y multiempresa | NestJS 12 · WebSockets · MongoDB · Angular 22 |
-| **ERP** | Clientes, productos, inventario, ventas, compras, citas y reportes | NestJS 12 · TypeORM · PostgreSQL · Angular 22 |
-| **UI** | Sistema de diseño `@cinnamon-sas/ui` con tokens y Storybook | Angular 22 · PrimeNG 22 |
-| **Platform** | Terraform, despliegue a producción, stack de desarrollo y escritorio | AWS · Docker Compose · Electron · Caddy |
+- **Chat** · `NestJS 12 · WebSockets · MongoDB · Angular 22` — Operación de conversaciones en tiempo real, multicanal y multiempresa.
+- **ERP** · `NestJS 12 · TypeORM · PostgreSQL · Angular 22` — Clientes, productos, inventario, ventas, compras, citas y reportes.
+- **UI** · `Angular 22 · PrimeNG 22 · Storybook` — Sistema de diseño `@cinnamon-sas/ui` con tokens compartidos.
+- **Platform** · `AWS · Docker Compose · Electron · Caddy` — Terraform, despliegue a producción, stack de desarrollo y escritorio.
 
 ### 🧰 Stack
 
@@ -75,13 +73,11 @@
 
 ### 🚀 Proyectos que vale la pena abrir
 
-| Repo | Qué es | Stack |
-| :--- | :--- | :--- |
-| **[git-profile-switcher](https://github.com/Canopus44/git-profile-switcher)** | Cambia usuario, email, llave SSH y cuenta de `gh` con un clic. Nació de fricción real: trabajo y proyectos personales en la misma máquina. | C# · PowerShell |
-| **[cinnamon-docker](https://github.com/Canopus44/cinnamon-docker)** | Panel de escritorio para Docker y el stack de Cinnamon: contenedores, logs y estado sin abrir la terminal. | Rust · Svelte · TypeScript |
-| **[opencode-ai-stack](https://github.com/Canopus44/opencode-ai-stack)** | Stack de agentes de IA para el equipo: configuración de OpenCode, MCP, *skills* y scripts de instalación multiplataforma. | PowerShell · Shell |
-| **[halloween-movie-calendar](https://github.com/Canopus44/halloween-movie-calendar)** | 31 noches, 31 películas. Landing interactiva con datos reales de TMDB y despliegue estático. | TypeScript · Supabase · Vite |
-| **[mr-fix-it](https://github.com/Canopus44/mr-fix-it)** | Landing de servicio técnico de celulares en Medellín, pensada para convertir desde el móvil. | React 18 · Vite |
+- **[git-profile-switcher](https://github.com/Canopus44/git-profile-switcher)** · `C# · PowerShell` — Cambia usuario, email, llave SSH y cuenta de `gh` con un clic. Nació de fricción real: trabajo y proyectos personales en la misma máquina.
+- **[cinnamon-docker](https://github.com/Canopus44/cinnamon-docker)** · `Rust · Svelte · TypeScript` — Panel de escritorio para Docker y el stack de Cinnamon: contenedores, logs y estado sin abrir la terminal.
+- **[opencode-ai-stack](https://github.com/Canopus44/opencode-ai-stack)** · `PowerShell · Shell` — Stack de agentes de IA para el equipo: configuración de OpenCode, MCP, *skills* y scripts de instalación multiplataforma.
+- **[halloween-movie-calendar](https://github.com/Canopus44/halloween-movie-calendar)** · `TypeScript · Supabase · Vite` — 31 noches, 31 películas. Landing interactiva con datos reales de TMDB y despliegue estático.
+- **[mr-fix-it](https://github.com/Canopus44/mr-fix-it)** · `React 18 · Vite` — Landing de servicio técnico de celulares en Medellín, pensada para convertir desde el móvil.
 
 ### ⚙️ Cómo trabajo
 
