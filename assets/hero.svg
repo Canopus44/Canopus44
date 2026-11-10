@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="320" viewBox="0 0 1180 320" fill="none" role="img" aria-label="Santiago Molina — CEO &amp; Founder de Cinnamon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1180" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#080C16"/>
+      <stop offset="0.55" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#0E1526"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5C08A"/>
+      <stop offset="0.5" stop-color="#E08A4B"/>
+      <stop offset="1" stop-color="#B85C2E"/>
+    </linearGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1180" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E08A4B" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#E08A4B" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#E08A4B" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#E08A4B" stop-opacity="0.30"/>
+      <stop offset="0.6" stop-color="#E08A4B" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#E08A4B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3D7BFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#3D7BFF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#7C8CA8" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <clipPath id="card">
+      <rect width="1180" height="320" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1180" height="320" fill="url(#bg)"/>
+    <rect width="1180" height="320" fill="url(#grid)"/>
+    <circle cx="1030" cy="120" r="300" fill="url(#glow)"/>
+    <circle cx="120" cy="300" r="260" fill="url(#glow2)"/>
+
+    <!-- side rails -->
+    <path d="M24 56V24H56" stroke="#E08A4B" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round"/>
+    <path d="M1156 264V296H1124" stroke="#E08A4B" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- eyebrow -->
+    <text x="64" y="92" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12.5" letter-spacing="4.2" fill="#8FA3BF">MEDELLÍN · COLOMBIA · UTC−5</text>
+
+    <!-- name -->
+    <text x="62" y="156" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="-1.2" fill="#F7FAFF">Santiago Molina</text>
+
+    <!-- role -->
+    <text x="64" y="198" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="600" fill="url(#accent)">CEO &amp; Founder</text>
+    <text x="222" y="198" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="21" font-weight="400" fill="#C7D3E4">— Cinnamon</text>
+
+    <!-- tagline -->
+    <text x="64" y="236" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16.5" fill="#9BB0CB">Plataforma omnicanal: Chat + ERP. Del Terraform al último pixel.</text>
+
+    <!-- rule -->
+    <rect x="64" y="262" width="72" height="3" rx="1.5" fill="url(#sweep)"/>
+
+    <!-- meta -->
+    <text x="64" y="292" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="12" letter-spacing="1.4" fill="#6F819C">7 REPOS · 2 PRODUCTOS · 1 PLATAFORMA</text>
+
+    <!-- orbit -->
+    <g transform="translate(980 160)">
+      <circle r="112" stroke="#E08A4B" stroke-opacity="0.16" stroke-width="1"/>
+      <circle r="84" stroke="#E08A4B" stroke-opacity="0.28" stroke-width="1" stroke-dasharray="2 6"/>
+      <circle cx="0" cy="-112" r="4" fill="#F5C08A"/>
+      <circle cx="96" cy="58" r="3" fill="#E08A4B" fill-opacity="0.9"/>
+      <circle cx="-96" cy="58" r="3" fill="#E08A4B" fill-opacity="0.55"/>
+      <circle r="62" fill="#0D1524" stroke="#E08A4B" stroke-opacity="0.45" stroke-width="1.5"/>
+      <text x="0" y="22" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="64" font-weight="700" fill="url(#accent)">C</text>
+    </g>
+
+    <!-- frame -->
+    <rect x="0.75" y="0.75" width="1178.5" height="318.5" rx="17.5" stroke="#FFFFFF" stroke-opacity="0.09" stroke-width="1.5"/>
+  </g>
+</svg>
