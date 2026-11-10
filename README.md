@@ -10,41 +10,27 @@
 
 <br />
 
-> **El producto se defiende solo cuando la infraestructura no pide permiso.**
+> **Menos herramientas, más negocio.**
 >
-> Soy **Santiago Molina**, CEO y fundador de **[Cinnamon](https://cinnamon-hub.com)** — la plataforma omnicanal donde la conversación y la operación del negocio comparten el mismo dato: WhatsApp, Instagram, TikTok y widget a un lado; clientes, inventario, ventas y compras al otro.
+> Soy **Santiago Molina**, CEO y fundador de **[Cinnamon](https://cinnamon-hub.com)**. Construimos la plataforma donde un negocio atiende a sus clientes y maneja su operación sin saltar entre pestañas: la conversación de WhatsApp, Instagram o TikTok y la venta, el inventario y el reporte viven en el mismo lugar.
 >
-> No solo dirijo el producto: vivo en el código. NestJS y Angular en el día a día, Terraform, Docker y AWS cuando toca bajar a la infraestructura y hacer que todo aguante.
+> Dirijo la empresa y sigo metido en el producto. Un CEO que deja de entender lo que construye termina tomando decisiones para una empresa que ya no existe.
 
 ---
 
-### 🧭 Qué hago
+### 🍂 Qué cambia con Cinnamon
 
-- **Producto** — Defino qué se construye y por qué. Dos productos independientes (Chat y ERP) que comparten autenticación y no comparten base de datos: cada uno con su dueño, su contrato y su ritmo de despliegue.
-- **Arquitectura** — Nada de monorepo: siete repos con reglas claras. JWT con `sub`, `email`, `role` y `companyId`; integración **solo por HTTP REST**; cero acceso cruzado a bases de datos.
-- **Código** — Backends NestJS, frontends Angular, librería de componentes propia, shell de escritorio en Electron y una consola en Rust cuando Docker necesita una cara.
-- **Infraestructura** — Terraform, ECR, S3, CloudFront, CloudWatch y systemd. Si no está en código, no existe.
+- **Una sola bandeja.** WhatsApp, Instagram, TikTok, Facebook y el chat del sitio web llegan al mismo lugar. Nadie queda sin respuesta porque *"ese mensaje estaba en otra app"*.
+- **La conversación se vuelve venta.** El equipo cotiza y cierra sin salir del sistema, y cada venta descuenta inventario y aparece en el reporte del día.
+- **Cada empresa, su espacio.** Varias empresas en la misma plataforma, cada una con sus usuarios, sus clientes y su información separada. Nada se mezcla.
+- **El negocio se ve desde arriba.** Ventas, compras, citas e inventario en reportes que se leen en un minuto, no en una hoja de cálculo.
+- **Disponible cuando abres.** Corre en la nube, con respaldo y monitoreo. Si el negocio no duerme, la plataforma tampoco.
 
-### 🍂 Cinnamon
+> **Antes:** cinco aplicaciones, dos hojas de cálculo y un chat aparte.
+>
+> **Ahora:** el cliente escribe y la venta, el inventario y el reporte se mueven con él.
 
-```text
-┌ CANALES  WhatsApp · Instagram · TikTok · Meta · Widget
-├ CHAT     chat-backend · NestJS · Postgres + Mongo
-│          JWT compartido · sin acceso cruzado a BD
-├ ERP      erp-backend · NestJS · Postgres
-└ INFRA    CloudFront · S3 · ECR · Terraform · CloudWatch
-```
-
-- **Chat** · `NestJS 12 · WebSockets · MongoDB · Angular 22`<br>
-  Operación de conversaciones en tiempo real, multicanal y multiempresa.
-- **ERP** · `NestJS 12 · TypeORM · PostgreSQL · Angular 22`<br>
-  Clientes, productos, inventario, ventas, compras, citas y reportes.
-- **UI** · `Angular 22 · PrimeNG 22 · Storybook`<br>
-  Sistema de diseño `@cinnamon-sas/ui` con tokens compartidos.
-- **Platform** · `AWS · Docker Compose · Electron · Caddy`<br>
-  Terraform, despliegue a producción, stack de desarrollo y escritorio.
-
-### 🧰 Stack
+### 🧰 Con qué está hecho
 
 <div align="center">
 
@@ -61,10 +47,6 @@
 
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
 <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
-<img src="https://img.shields.io/badge/TypeORM-FE0803?style=flat-square&logo=typeorm&logoColor=white" alt="TypeORM" />
-<img src="https://img.shields.io/badge/OpenAPI-6BA539?style=flat-square&logo=openapiinitiative&logoColor=white" alt="OpenAPI" />
-<img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" alt="JWT" />
-
 <img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square" alt="AWS" />
 <img src="https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white" alt="Terraform" />
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
@@ -88,41 +70,42 @@
 - **[mr-fix-it](https://github.com/Canopus44/mr-fix-it)** · `React 18 · Vite`<br>
   Landing de servicio técnico de celulares en Medellín, pensada para convertir desde el móvil.
 
-### ⚙️ Cómo trabajo
+### ⚙️ Cómo pienso el producto
 
-- **Si no corre en contenedor, no es reproducible.** El stack completo se levanta desde un solo comando; nadie arranca servicios a mano en su máquina.
-- **Un PR por repo.** Un cambio que cruza aplicaciones son varios PRs enlazados, nunca un commit gigante que nadie puede revisar.
-- **El contrato primero.** El OpenAPI se genera desde el código y jamás se edita a mano: si el contrato miente, el cliente se rompe en producción.
-- **La migración se escribe una vez.** Nada de `synchronize: true` ni "arreglemos la base en caliente".
-- **Los servicios se vigilan solos.** *Health checks*, *start period* y límites de memoria antes de ver un solo usuario real.
-- **Documentar es parte de construir.** Bitácoras, informes técnicos y `AGENTS.md` en cada repo: el contexto no puede vivir solo en la cabeza del fundador.
+- **Primero el problema, después la herramienta.** La pregunta nunca es qué tecnología usar, sino qué deja de dolerle al negocio esta semana.
+- **Si hay que explicarlo dos veces, está mal diseñado.** El equipo de un cliente debería aprender la plataforma en una tarde, no con un manual.
+- **Menos clics, más ventas.** Cada paso que sobra entre el mensaje y el cierre es dinero que se enfría.
+- **Lo fácil de usar es lo difícil de construir.** La complejidad se queda de nuestro lado, no del lado del usuario.
+- **Nada se rompe en silencio.** Si algo falla, nos enteramos antes que el cliente.
+- **El soporte es parte del producto.** Un cliente con una duda sin responder ya está pensando en irse.
 
 ### 📡 En este momento
 
-- 🍂 Consolidando **Cinnamon**: Chat + ERP sobre un solo JWT, multiempresa y despliegue con Terraform en AWS.
-- 🧾 Metiendo **facturación electrónica DIAN** dentro del ERP, con todo lo que implica en validaciones y cumplimiento.
-- 🤖 Explorando **agentes de IA y MCP** como parte del ciclo de desarrollo, no como demo de fin de semana.
-- 🦀 Aprendiendo Rust en serio, a punta de escribir herramientas que uso todos los días.
+- 🍂 Creciendo con los primeros equipos que usan **Cinnamon** todos los días.
+- 🧾 Sumando **facturación electrónica** para que facturar no saque a nadie de la plataforma.
+- 🤖 Probando **IA** donde de verdad ahorra tiempo al equipo, no como demo de fin de semana.
+- 🛠️ Construyendo a mano las herramientas que no existen, cuando no existen.
 
 ---
 
 <div align="center">
-  <sub><b>Medellín, Colombia</b> · UTC−5 · construyendo y desplegando sin drama</sub>
+  <sub><b>Medellín, Colombia</b> · construyendo y desplegando sin drama</sub>
 </div>
 
 ---
 
 ## 🇬🇧 In English
 
-I'm **Santiago Molina**, **CEO & Founder of [Cinnamon](https://cinnamon-hub.com)** — an omnichannel platform where conversation and business operations share the same data: WhatsApp, Instagram, TikTok and web widget on one side; customers, inventory, sales, purchases and reporting on the other.
+I'm **Santiago Molina**, **CEO & Founder of [Cinnamon](https://cinnamon-hub.com)**. We build the platform where a business talks to its customers and runs its operation in one place: WhatsApp, Instagram and TikTok conversations on one side; customers, inventory, sales and reporting on the other.
 
-I don't just run the roadmap — I'm in the codebase. **NestJS** backends, **Angular** frontends, a shared design system, and **Terraform on AWS** when the infrastructure needs a decision. Two products, separate databases, a single shared JWT, and integration strictly over REST.
+- **One inbox.** Every channel lands in the same place. No customer left waiting because the message *"was in the other app"*.
+- **Conversations become sales.** The team quotes and closes without leaving the system, and every sale updates inventory and today's numbers.
+- **Every company, its own space.** Multiple companies on one platform, each with its own users, customers and data. Nothing gets mixed.
+- **The business at a glance.** Sales, purchases, appointments and inventory in reports you read in a minute.
+- **Up when you open.** Cloud-hosted, backed up and monitored.
 
-- 🧱 **Architecture:** seven repos, one contract, zero cross-database access.
-- 🐳 **Reproducibility:** everything runs in Docker Compose; nothing is started by hand.
-- 📐 **Contract-first:** OpenAPI generated from code, never hand-edited.
-- ☁️ **Infrastructure as code:** ECR, S3, CloudFront, CloudWatch and Terraform — or it doesn't exist.
+I run the company and I'm still in the product — a CEO who ships.
 
-**Stack:** TypeScript · NestJS · Angular · Node.js · PostgreSQL · MongoDB · Terraform · AWS · Docker · Rust · C# · Linux
+**Built with:** TypeScript · NestJS · Angular · PostgreSQL · MongoDB · AWS · Docker · Rust · C#
 
 **Find me:** [cinnamon-hub.com](https://cinnamon-hub.com) · [X @Canopus44_](https://x.com/Canopus44_)
