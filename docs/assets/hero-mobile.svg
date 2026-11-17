@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" fill="none" role="img" aria-label="Santiago Molina — CEO &amp; Founder de Cinnamon">
+  <defs>
+    <linearGradient id="mbg" x1="0" y1="0" x2="480" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#080C16"/>
+      <stop offset="0.55" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#0E1526"/>
+    </linearGradient>
+    <linearGradient id="maccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5C08A"/>
+      <stop offset="0.5" stop-color="#E08A4B"/>
+      <stop offset="1" stop-color="#B85C2E"/>
+    </linearGradient>
+    <linearGradient id="msweep" x1="0" y1="0" x2="480" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E08A4B" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#E08A4B" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#E08A4B" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="mglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#E08A4B" stop-opacity="0.30"/>
+      <stop offset="0.6" stop-color="#E08A4B" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#E08A4B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="mglow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3D7BFF" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#3D7BFF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="mgrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#7C8CA8" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <clipPath id="mcard">
+      <rect width="480" height="320" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#mcard)">
+    <rect width="480" height="320" fill="url(#mbg)"/>
+    <rect width="480" height="320" fill="url(#mgrid)"/>
+    <circle cx="420" cy="250" r="190" fill="url(#mglow)"/>
+    <circle cx="60" cy="300" r="150" fill="url(#mglow2)"/>
+
+    <path d="M20 46V20H46" stroke="#E08A4B" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round"/>
+    <path d="M460 274V300H434" stroke="#E08A4B" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round"/>
+
+    <text x="30" y="56" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="11" letter-spacing="3.2" fill="#8FA3BF">MEDELLÍN · COLOMBIA</text>
+
+    <text x="29" y="114" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="-1" fill="#F7FAFF">Santiago Molina</text>
+
+    <text x="30" y="150" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16.5" font-weight="600" fill="url(#maccent)">CEO &amp; Founder</text>
+    <text x="163" y="150" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16.5" font-weight="400" fill="#C7D3E4">— Cinnamon</text>
+
+    <text x="30" y="188" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#C3D0E2">Todo tu negocio, en una sola conversación.</text>
+
+    <rect x="30" y="214" width="48" height="2.5" rx="1.25" fill="url(#msweep)"/>
+
+    <g transform="translate(404 240)">
+      <circle r="50" stroke="#E08A4B" stroke-opacity="0.16" stroke-width="1"/>
+      <circle r="37" stroke="#E08A4B" stroke-opacity="0.30" stroke-width="1" stroke-dasharray="2 5"/>
+      <circle cx="0" cy="-50" r="2.6" fill="#F5C08A"/>
+      <circle cx="43" cy="26" r="2" fill="#E08A4B" fill-opacity="0.9"/>
+      <circle r="27" fill="#0D1524" stroke="#E08A4B" stroke-opacity="0.45" stroke-width="1.2"/>
+      <text x="0" y="11" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" fill="url(#maccent)">C</text>
+    </g>
+
+    <rect x="0.5" y="0.5" width="479" height="319" rx="15.5" stroke="#FFFFFF" stroke-opacity="0.09" stroke-width="1"/>
+  </g>
+</svg>
